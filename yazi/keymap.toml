@@ -1,0 +1,86 @@
+[[mgr.prepend_keymap]]
+on   = [ "c", "m" ]
+run  = "plugin chmod"
+desc = "Chmod on selected files"
+
+[[mgr.prepend_keymap]]
+on = ["c", "r"]
+run = "plugin fr rg"
+desc = "Search file by content (rg)"
+
+[[mgr.prepend_keymap]]
+on = ["c", "a"]
+run = "plugin fr rga"
+desc = "Search file by content (rga)"
+
+[[mgr.prepend_keymap]]
+on = [ "b", "a" ]
+run = "plugin yamb -- save"
+desc = "Add bookmark"
+
+[[mgr.prepend_keymap]]
+on = [ "b", "g" ]
+run = "plugin yamb -- jump_by_key"
+desc = "Jump bookmark by key"
+
+[[mgr.prepend_keymap]]
+on = [ "b", "b" ]
+run = "plugin yamb -- jump_by_fzf"
+desc = "Jump bookmark by fzf"
+
+[[mgr.prepend_keymap]]
+on = [ "b", "D" ]
+run = "plugin yamb -- delete_by_key"
+desc = "Delete bookmark by key"
+
+[[mgr.prepend_keymap]]
+on = [ "b", "d" ]
+run = "plugin yamb -- delete_by_fzf"
+desc = "Delete bookmark by fzf"
+
+[[mgr.prepend_keymap]]
+on = [ "b", "X" ]
+run = "plugin yamb -- delete_all"
+desc = "Delete all bookmarks"
+
+[[mgr.prepend_keymap]]
+on = [ "b", "R" ]
+run = "plugin yamb -- rename_by_key"
+desc = "Rename bookmark by key"
+
+[[mgr.prepend_keymap]]
+on = [ "b", "r" ]
+run = "plugin yamb -- rename_by_fzf"
+desc = "Rename bookmark by fzf"
+
+
+
+
+
+[[mgr.prepend_keymap]]
+on = [ "f", "d" ]
+run = "plugin fazif faziffd"
+desc = "Find files/directories with fd and fzf"
+
+# Content finder using ripgrep + fzf
+[[mgr.prepend_keymap]]
+on = [ "f", "r" ]
+run = "plugin fazif fazifrg"
+desc = "Find content in files with ripgrep and fzf"
+
+# Document content finder using ripgrep-all + fzf
+[[mgr.prepend_keymap]]
+on = [ "f", "a" ]
+run = "plugin fazif fazifrga"
+desc = "Find content in documents with ripgrep-all and fzf"
+
+# copy file content 
+[[mgr.prepend_keymap]]
+on = "<A-y>"
+run = ["plugin copy-file-contents"]
+desc = "Copy contents of file"
+
+[[mgr.prepend_keymap]]
+on   = "<enter>"
+run  = "plugin smart-enter"
+desc = "Enter the child directory, or open the file"
